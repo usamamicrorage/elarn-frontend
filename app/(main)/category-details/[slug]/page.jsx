@@ -10,13 +10,12 @@ export async function generateMetadata({ params }) {
 
 const CategoryDetails = ({ params }) => {
     return (
-        <div>
-            <Header />
-            <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none 
-            text-gray-900 md:text-3xl lg:text-3xl dark:text-white">
-                {params.slug.replace('-', ' ').toUpperCase()}
-            </h1>
-        </div>
+            <Header >
+                <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none 
+                text-gray-900 md:text-3xl lg:text-3xl dark:text-white">
+                    {params.slug.replace('-', ' ').toUpperCase()}
+                </h1>
+            </Header>
     );
 };
 
